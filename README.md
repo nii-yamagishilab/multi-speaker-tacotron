@@ -1,4 +1,4 @@
-# multi-speaker-tacotron-internal
+# multi-speaker-tacotron
 
 This is an implementation of our paper to appear at ICASSP 2020:  
 "Zero-Shot Multi-Speaker Text-To-Speech with State-of-the-art Neural Speaker Embeddings," by Erica Cooper, Cheng-I Lai, Yusuke Yasuda, Fuming Fang, Xin Wang, Nanxin Chen, and Junichi Yamagishi.  
