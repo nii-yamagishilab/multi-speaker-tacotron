@@ -29,7 +29,7 @@ git clone https://github.com/nii-yamagishilab/self-attention-tacotron.git extern
 ```
 Note the renaming of hyphens to underscores; this is necessary because “-” is an invalid character in Python.
 
-Next, download project data and models, from the dropbox folder <a href=https://www.dropbox.com/sh/rq4lebus0n8tmso/AACldbmKDPRN9YiXrRROjtTSa?dl=0>here</a>:
+Next, download project data and models, from the dropbox folder here: https://www.dropbox.com/sh/rq4lebus0n8tmso/AACldbmKDPRN9YiXrRROjtTSa?dl=0
  * Preprocessed VCTK data: in the `data` directory
  * VCTK Tacotron models: in the `tacotron-models` directory
  * VCTK Wavenet models: in the `wavenet-models` directory
