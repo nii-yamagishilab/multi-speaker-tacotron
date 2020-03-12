@@ -29,7 +29,11 @@ git clone https://github.com/nii-yamagishilab/self-attention-tacotron.git extern
 ```
 Note the renaming of hyphens to underscores; this is necessary because “-” is an invalid character in Python.
 
-Next, download project data and models:  (TBA)
+Next, download project data and models, from the dropbox folder <a href=https://www.dropbox.com/sh/rq4lebus0n8tmso/AACldbmKDPRN9YiXrRROjtTSa?dl=0>here</a>:
+ * Preprocessed VCTK data: in the `data` directory
+ * VCTK Tacotron models: in the `tacotron-models` directory
+ * VCTK Wavenet models: in the `wavenet-models` directory
+ * Nancy model for parameter initialization: TBA
 
 To use our pre-trained WaveNet models, you will also need our WaveNet implementation which can be found here:
 https://github.com/nii-yamagishilab/project-CURRENNT-scripts
