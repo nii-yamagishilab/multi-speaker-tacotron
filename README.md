@@ -18,7 +18,7 @@ pip install inflect pysptk
 
 Install this repository
 ```
-git clone https://github.com/nii-yamagishilab/multi-speaker-tacotron-internal.git external/multi_speaker_tacotron
+git clone https://github.com/nii-yamagishilab/multi-speaker-tacotron.git external/multi_speaker_tacotron
 ```
 
 Install Tacotron dependencies if you don't have them already:
