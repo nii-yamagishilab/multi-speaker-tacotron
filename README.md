@@ -35,12 +35,14 @@ Next, download project data and models, from the dropbox folder here: https://ww
  * VCTK Wavenet models: in the `wavenet-models` directory
  * Nancy model for parameter initialization: TBA
 
+Training from scratch using the VCTK data only is possible using the script `train_from_scratch.sh`; this does not require the Nancy pre-trained model.
+
 To use our pre-trained WaveNet models, you will also need our WaveNet implementation which can be found here:
 https://github.com/nii-yamagishilab/project-CURRENNT-scripts
 
 ## How to use
 
-See the scripts `warmup.sh` (training) and `predictmel.sh` (prediction).  The scripts assume a SLURM-type computing environment.  You will need to change the paths to match your environments and point to your data.  Here are the parameters relevant to multi-speaker TTS:
+See the scripts `warmup.sh` (warm start training), `train_from_scratch.sh` (train on VCTK data only), and `predictmel.sh` (prediction).  The scripts assume a SLURM-type computing environment.  You will need to change the paths to match your environments and point to your data.  Here are the parameters relevant to multi-speaker TTS:
  * `source-data-root` and `target-data-root`: path to your source and target preprocessed data
  * `selected-list-dir`: train/eval/test set definitions
  * `batch_size`: if you get OOM errors, try reducing the batch size
