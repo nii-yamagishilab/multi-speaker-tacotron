@@ -40,6 +40,9 @@ Training from scratch using the VCTK data only is possible using the script `tra
 To use our pre-trained WaveNet models, you will also need our WaveNet implementation which can be found here:
 https://github.com/nii-yamagishilab/project-CURRENNT-scripts
 
+To obtain embeddings for new samples, you will need the neural speaker embedding code which can be found here:
+https://github.com/jefflai108/pytorch-kaldi-neural-speaker-embeddings
+
 ## How to use
 
 See the scripts `warmup.sh` (warm start training), `train_from_scratch.sh` (train on VCTK data only), and `predictmel.sh` (prediction).  The scripts assume a SLURM-type computing environment.  You will need to change the paths to match your environments and point to your data.  Here are the parameters relevant to multi-speaker TTS:
