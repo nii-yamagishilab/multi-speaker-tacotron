@@ -5,6 +5,8 @@ This is an implementation of our paper to appear at ICASSP 2020:
 https://arxiv.org/abs/1910.10838  
 Please cite this paper if you use this code.  
 
+Audio samples can be found here:  https://nii-yamagishilab.github.io/samples-multi-speaker-tacotron/
+
 ## Dependencies:  
 
 It is recommended to set up a miniconda environment for using Tacotron.  https://repo.anaconda.com
