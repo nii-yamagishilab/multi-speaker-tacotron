@@ -1,0 +1,42 @@
+Example scripts from Interspeech 2020 paper, "Can Speaker Augmentation Improve Multi-Speaker End-to-End TTS?"
+
+You need to change all paths to point to your data or pretrained models.
+
+ * PYTHONPATH: add the paths to your copies of the code.
+
+
+step1.sh: warm-starts a multi-speaker model from a single-speaker one.
+
+ * ckpt_to_initialize_from -- place path to your pretrained Nancy model or other single-speaker model to warm-start from.  (unfortunately due to licensing restrictions we cannot release our pretrained Nancy model.
+
+ * source-data-root and target-data-root: path to your preprocessed datasets.  In our paper this was VCTK, GRID, WSJ1, WSJCAM, and TIMIT.  We cannot release our preprocessed data due to licensing restrictions on some of these corpora.  Make sure that num_speakers and speaker_embedding_offset match your data.
+
+ * embedding_file: point to your speaker embedding file, e.g. vctk-lde-3.txt.  Make sure that speaker_embedding_dim matches.
+
+
+step2.sh: adds channel labels.
+
+ * ckpt_to_initialize_from should point to your step1 output checkpoint from the previous stage.
+
+ * corpus_channel_encodings.txt should be a set of one-hot embedding vectors per speaker, identifying which corpus that speaker comes from, in a similar format to the speaker embeddings.  This example shows some VCTK speakers:
+
+p225  [ 1 0 0 0 0 ]
+p226  [ 1 0 0 0 0 ]
+p227  [ 1 0 0 0 0 ]
+p228  [ 1 0 0 0 0 ]
+p229  [ 1 0 0 0 0 ]
+p230  [ 1 0 0 0 0 ]
+p231  [ 1 0 0 0 0 ]
+p232  [ 1 0 0 0 0 ]
+p233  [ 1 0 0 0 0 ]
+p234  [ 1 0 0 0 0 ]
+.....
+
+ * channel_id_dim should match.
+
+
+step3.sh: adds dialect embeddings.
+
+ * language_embedding_file should be a file similar to the speaker embedding file, containing language embeddings by speaker.  language_embedding_dim should match.
+
+ * ckpt_to_initialize_from should be your step2 output checkpoint from the previous stage.
