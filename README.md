@@ -8,6 +8,7 @@ Please cite this paper if you use this code.
 Audio samples can be found here:  https://nii-yamagishilab.github.io/samples-multi-speaker-tacotron/
 
 ## News:
+ * 2021-06-21: Added scripts for creating tfrecords to synthesize new texts using pretrained models.  See directory `synthesize_new_texts` and its README.
  * 2020-08-10: Added example scripts for our new paper accepted to Interspeech 2020, <a href=https://arxiv.org/abs/2005.01245>"Can Speaker Augmentation Improve Multi-Speaker End-to-End TTS?"</a>  See directory `is20` and please also update your copies of `tacotron2` and `self-attention-tacotron` repositories as these contain some necessary changes.
 
 ## Dependencies:  
