@@ -13,7 +13,8 @@ conda activate preprocess-cpu
 conda install unidecode pyspark docopt
 conda install -c conda-forge librosa
 pip install inflect
-conda install tensorflow=1.11```
+conda install tensorflow=1.11
+```
 
 ## Modify paths in scripts
 
