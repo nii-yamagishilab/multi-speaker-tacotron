@@ -23,7 +23,8 @@ In `construct_tfrecords.py`, modify the paths and speaker ID variables to match 
 ## Run
 
 ```conda activate preprocess-cpu
-python construct_tfrecords.py```
+python construct_tfrecords.py
+```
 
 This outputs source and target tfrecords.  The target tfrecords are just empty audio but they need to be created because Tacotron expects both source and target data even at synthesis time.
 
