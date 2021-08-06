@@ -30,4 +30,4 @@ This outputs source and target tfrecords.  The target tfrecords are just empty a
 
 The example texts come from the CMU ARCTIC sentences  http://www.festvox.org/cmu_arctic/
 
-The hparams.json in this directory are the same ones that were used in training the VCTK Tacotron models.
+The hparams.json in this directory are the same ones that were used in training the VCTK Tacotron models -- please make sure it matches the hparams file that was used to train the model that you are using for synthesis.
