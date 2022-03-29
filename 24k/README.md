@@ -2,7 +2,7 @@
 
 Code and models from our technical report on arXiv, "Pretraining Strategies, Waveform Model Choice, and Acoustic Configurations for Multi-Speaker End-to-End Speech Synthesis," by Erica Cooper, Xin Wang, Yi Zhao, Yusuke Yasuda, and Junichi Yamagishi.  https://arxiv.org/abs/2011.04839
 
-Pretrained models can be found on Dropbox here: https://www.dropbox.com/sh/rzvxu9i0u0cw7qc/AAAMKIt_Y8U4yv6mhhEgNRxOa?dl=0
+Pretrained models can be found in the `24k` directory of the data shared on Zenodo:  https://zenodo.org/record/6349897#.YkKR-C8Rr0o
  * Preprocessed VCTK data: in the `data` directory
  * VCTK Tacotron models: in the `tacotron-models` directory
    * `ljspeech-24k`: single-speaker, character-input model trained on LJSpeech.
