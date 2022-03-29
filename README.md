@@ -1,6 +1,6 @@
 # multi-speaker-tacotron
 
-This is an implementation of our paper to appear at ICASSP 2020:  
+This is an implementation of our paper from ICASSP 2020:  
 "Zero-Shot Multi-Speaker Text-To-Speech with State-of-the-art Neural Speaker Embeddings," by Erica Cooper, Cheng-I Lai, Yusuke Yasuda, Fuming Fang, Xin Wang, Nanxin Chen, and Junichi Yamagishi.  
 https://arxiv.org/abs/1910.10838  
 Please cite this paper if you use this code.  
@@ -8,6 +8,7 @@ Please cite this paper if you use this code.
 Audio samples can be found here:  https://nii-yamagishilab.github.io/samples-multi-speaker-tacotron/
 
 ## News:
+ * 2022-03-29: Migrated data from Dropbox to Zenodo.
  * 2021-06-21: Added scripts for creating tfrecords to synthesize new texts using pretrained models.  See directory `synthesize_new_texts` and its README.
  * 2020-08-10: Added example scripts for our new paper accepted to Interspeech 2020, <a href=https://arxiv.org/abs/2005.01245>"Can Speaker Augmentation Improve Multi-Speaker End-to-End TTS?"</a>  See directory `is20` and please also update your copies of `tacotron2` and `self-attention-tacotron` repositories as these contain some necessary changes.
 
@@ -35,13 +36,12 @@ git clone https://github.com/nii-yamagishilab/self-attention-tacotron.git extern
 ```
 Note the renaming of hyphens to underscores; this is necessary because “-” is an invalid character in Python.
 
-Next, download project data and models, from the dropbox folder here: https://www.dropbox.com/sh/rq4lebus0n8tmso/AACldbmKDPRN9YiXrRROjtTSa?dl=0
+Next, download project data and models, ~~from the dropbox folder here: https://www.dropbox.com/sh/rq4lebus0n8tmso/AACldbmKDPRN9YiXrRROjtTSa?dl=0~~  **The data has been moved to Zenodo.  You can find it here:  https://zenodo.org/record/6349897#.YkKR-C8Rr0o**
  * Preprocessed VCTK data: in the `data` directory
  * VCTK Tacotron models: in the `tacotron-models` directory
  * VCTK Wavenet models: in the `wavenet-models` directory
- * Nancy model for parameter initialization: TBA
 
-Training from scratch using the VCTK data only is possible using the script `train_from_scratch.sh`; this does not require the Nancy pre-trained model.
+Training from scratch using the VCTK data only is possible using the script `train_from_scratch.sh`; this does not require the Nancy pre-trained model which due to licensing restrictions we are unable to share.
 
 To use our pre-trained WaveNet models, you will also need our WaveNet implementation which can be found here:
 https://github.com/nii-yamagishilab/project-CURRENNT-scripts
